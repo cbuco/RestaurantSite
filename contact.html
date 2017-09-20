@@ -2,28 +2,34 @@
 <html>
     <head>
         <title>Tybee Sea Shanty - Contact</title>
+        <link href="restaurantStyles.css"
+        rel="stylesheet"
+        type="text/css" />
         <style>
-            h1 {
-                text-align:center;
-            }
-            h5 {
-                text-align:center;
-            }
-            table.navigation {
-                border-spacing: 40px 5px;
-            }
             table.contactform td {
                 padding: 5px;
+            }
+            td.alignright {
+                text-align:right;
+                font-weight:bold;
+            }
+            #sendRequestButton {
+                text-align:center;
+            }
+            #addlInfoBox {
+                text-align:right;
+                font-weight:bold;
+                vertical-align:top;
             }
         </style>
     </head>
     <body>
         <div>
-            <h1>Tybee Sea Shanty</h1>
+            <h1 id="headerh1">Tybee Sea Shanty</h1>
         </div>
         <hr />
         <div>
-            <table class="navigation">
+            <table id="navigation">
                 <tr>
                     <td><a href="homepage.html">Home</a></td>
                     <td><a href="menu.html">Menu</a></td>
@@ -36,19 +42,19 @@
             <form action="#" method="POST">
                 <table class="contactform">
                     <tr>
-                        <td style="text-align:right"><label id="fullNameLabel" for="fullName"><strong>Name:</strong></label></td>
+                        <td class="alignright"><label id="fullNameLabel" for="fullName">Name:</label></td>
                         <td><input id="fullName" name="fullName" type="text" /></td>
                     </tr>
                     <tr>
-                        <td style="text-align:right"><label id="emailLabel" for="email"><strong>Email:</strong></label></td>
+                        <td class="alignright"><label id="emailLabel" for="email">Email:</label></td>
                         <td><input id="email" name="email" type="text" /></td>
                     </tr>
                     <tr>
-                        <td style="text-align:right"><label id="phoneNumberLabel" for="phoneNumber"><strong>Phone:</strong></label></td>
+                        <td class="alignright"><label id="phoneNumberLabel" for="phoneNumber">Phone:</label></td>
                         <td><input id="phoneNumber" name="phoneNumber" type="text" /></td>
                     </tr>           
                     <tr>
-                        <td style="text-align:right"><strong>Reason for Inquiry:</strong></td>
+                        <td class="alignright">Reason for Inquiry:</td>
                         <td>
                             <select name="reason">
                                 <option value="catering">Catering</option>
@@ -59,16 +65,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align:right; vertical-align: top"><label id="additionalInformationLabel" for="additionalInformation"><strong>Additional Information:</strong></label></td>
+                        <td id="addlInfoBox"><label id="additionalInformationLabel" for="additionalInformation"><strong>Additional Information:</strong></label></td>
                         <td><textarea id="additionalInformation" name="additionalInformation" rows="6"></textarea></td>
                     </tr>
                     <tr>
-                        <td style="text-align:right"><strong>Have you been to the restaurant?</strong></td>
-                        <td style><input type="radio" name="existingCustomer" value="no" checked/>No
+                        <td class="alignright">Have you been to the restaurant?</td>
+                        <td><input type="radio" name="existingCustomer" value="no" checked/>No
                             <input type="radio" name="existingCustomer" value="no" />Yes</td>
                     </tr>
                     <tr>
-                        <td style="text-align:right"><strong>Best days to contact you:</strong></td>
+                        <td class="alignright">Best days to contact you:</td>
                         <td>
                             <input type="checkbox" name="contactDays" value="monday">M
                             <input type="checkbox" name="contactDays" value="tuesday">T
@@ -79,7 +85,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td style="text-align:center"><input type="submit" id="submitButton" value="Send&nbsp;Request" /></td>
+                        <td id="sendRequestButton"><input type="submit" id="submitButton" value="Send&nbsp;Request" /></td>
                     </tr>
                 </table>    
             </form>   
@@ -88,8 +94,8 @@
         <hr />
     <footer>
         <div>
-            <h5>1 Crusty Crab Blvd., Tybee Island, GA 31328</h5>
-            <h5>(912) 756-7815</h5>
+            <h5 id="footeraddress">1 Crusty Crab Blvd., Tybee Island, GA 31328</h5>
+            <h5 id="footeraddress">(912) 756-7815</h5>
         </div>
     </footer>
 </html>
