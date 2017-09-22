@@ -11,3 +11,17 @@
 #navigation {
     border-spacing: 40px 5px;
 }
+#navigation a:link {
+    color: blue;
+}
+#navigation a:visited {
+    color: darkslategray;
+}
+#navigation a:hover {
+    color: blue;
+    font-weight: bold;
+}
+#navigation a:active {
+    color:blue;
+    text-decoration: none;
+}

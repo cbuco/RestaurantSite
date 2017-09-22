@@ -12,7 +12,18 @@
             td.menuitem {
                 font-size: x-large;
                 font-weight: bold;
-            } 
+            }
+            #beveragemenu th {
+                text-align: left;
+                text-decoration: underline;
+                font-weight:normal;
+            }
+            #beveragemenu td {
+                padding: 10px 10px 10px 0px;
+            }
+            td.drinkprice {
+                text-align:right;
+            }
         </style>
     </head>
     <body>
@@ -30,7 +41,7 @@
             </table>
         </div>
         <hr />
-        <div style="background-color: #A5F7F7">
+        <div style="background-color: #A5F7F7;">
             <table id="menu" style="width:100%">
                 <tr>
                     <td class="menuitem">Burger and Fries</td>
@@ -112,8 +123,38 @@
                     <td></td>
                     <td>$7.95</td>
                 </tr>
+                <tr>
+                    <td colspan="3"><hr /></td>
+                </tr>
             </table>
         </div>
+        <div align="center" style="background-color: #A5F7F7;">
+            <table id="beveragemenu" style="width:40%;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Root Beer</td>
+                        <td class="drinkprice">$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td class="drinkprice">$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td class="drinkprice">$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td class="drinkprice">$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>             
     </body>
         <hr />
     <footer>
