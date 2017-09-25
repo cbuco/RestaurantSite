@@ -1,64 +1,96 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+
         <title>Tybee Sea Shanty - Home</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+                        
+        <!-- External Stylesheet -->
         <link href="restaurantStyles.css"
               rel="stylesheet"
               type="text/css" />
+
+        <!-- Internal Stylesheet --> 
         <style>
-            #description {
-                width: 400px;
+            .center {
+                float: none;
                 margin-left: auto;
                 margin-right: auto;
-                border-collapse: collapse;
-                border: 1px solid black;
             }
         </style>
     </head>
     <body>
-        <div>
-            <h1 id="headerh1">Tybee Sea Shanty</h1>
-        </div>
-        <hr />
-        <div>
-            <table id="navigation">
-                <tr>
-                    <td><a href="homepage.html">Home</a></td>
-                    <td><a href="menu.html">Menu</a></td>
-                    <td><a href="contact.html">Contact Us</a></td>
-                </tr>
-            </table>
-        </div>
-        <hr />
-        <div style="background-color: #A5F7F7">
-            <div>
-                <br />
-                <img src="images/TybeeSeaShantyCropped.jpg"
-                    alt="Picture of Tybee Sea Shanty restaurant on the beach"
-                    style="width: 400px; height: 150px; display:block; margin-left:auto; margin-right:auto">
+        <div class="container">
+            <div class="jumbotron">
+                <p>Watch for our new Hilton Head, SC location coming soon!</p>
             </div>
-            <br />
-            <div align="center">
-                <table id="description">
-                    <tr>
-                        <td style="padding: 20px 20px 40px 20px; background-color:white;">
+            <div>
+                <h1 id="headerh1">Tybee Sea Shanty</h1>
+            </div>
+            <hr />
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="homepage.html">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </a>
+                    </li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr />
+            <div class="center" style="background-color: #A5F7F7;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <br />
+                        <img src="images/TybeeSeaShantyCropped.jpg"
+                        class="img-responsive"
+                        alt="Picture of Tybee Sea Shanty restaurant on the beach"
+                        style="width: 400px; height: 150px; display:block; margin-left:auto; margin-right:auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <br />
+                    </div>
+                    <div class="col-sm-4 center" style="background-color: white; border: 1px solid black; border-collapse: collapse;">
+                        <p>
                             A little about us...<br />
                             The Tybee Sean Shanty is a seaside restaurant serving American-style cuisine, including burgers, brisket, salads, 
                             and the freshest fish dishes on the island. Seafood is caught locally daily. Join us for a fun, casual atmosphere 
                             while enjoying the sun on your back or a break from the beach in our air conditioned dining room. We are a 
-                            family-friendly restaurant, and we even invite you to bring Fido to join you if dining on the deck.
-                        </td>
-                    </tr>
-                </table>
-            <br />
+                            family-friendly restaurant, and we even invite you to bring Fido to join you when dining on the deck.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <br />
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <br />
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
         <hr />
-    <footer>
-        <div>
-            <h5 id="footeraddress">1 Crusty Crab Blvd., Tybee Island, GA 31328</h5>
-            <h5 id="footeraddress">(912) 756-7815</h5>
-        </div>
-    </footer>
+        <footer>
+            <div>
+                <h5 id="footeraddress">1 Crusty Crab Blvd., Tybee Island, GA 31328</h5>
+                <h5 id="footeraddress">(912) 756-7815</h5>
+            </div>
+        </footer>
 </html>

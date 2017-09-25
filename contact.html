@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+
         <title>Tybee Sea Shanty - Contact</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- External Stylesheet -->
         <link href="restaurantStyles.css"
         rel="stylesheet"
         type="text/css" />
+        
         <style>
             table.contactform td {
                 padding: 5px;
@@ -23,73 +33,82 @@
         </style>
     </head>
     <body>
-        <div>
-            <h1 id="headerh1">Tybee Sea Shanty</h1>
-        </div>
-        <hr />
-        <div>
-            <table id="navigation">
-                <tr>
-                    <td><a href="homepage.html">Home</a></td>
-                    <td><a href="menu.html">Menu</a></td>
-                    <td><a href="contact.html">Contact Us</a></td>
-                </tr>
-            </table>
-        </div>
-        <hr />
-        <div>
-            <form action="#" method="POST">
-                <table class="contactform">
-                    <tr>
-                        <td class="alignright"><label id="fullNameLabel" for="fullName">Name:</label></td>
-                        <td><input id="fullName" name="fullName" type="text" /></td>
-                    </tr>
-                    <tr>
-                        <td class="alignright"><label id="emailLabel" for="email">Email:</label></td>
-                        <td><input id="email" name="email" type="text" /></td>
-                    </tr>
-                    <tr>
-                        <td class="alignright"><label id="phoneNumberLabel" for="phoneNumber">Phone:</label></td>
-                        <td><input id="phoneNumber" name="phoneNumber" type="text" /></td>
-                    </tr>           
-                    <tr>
-                        <td class="alignright">Reason for Inquiry:</td>
-                        <td>
-                            <select name="reason">
-                                <option value="catering">Catering</option>
-                                <option value="privateParty">Private Party</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="otherReason">Other</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="addlInfoBox"><label id="additionalInformationLabel" for="additionalInformation">Additional Information:</label></td>
-                        <td><textarea id="additionalInformation" name="additionalInformation" rows="6"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td class="alignright">Have you been to the restaurant?</td>
-                        <td><input type="radio" name="existingCustomer" value="no" checked/>No
-                            <input type="radio" name="existingCustomer" value="no" />Yes</td>
-                    </tr>
-                    <tr>
-                        <td class="alignright">Best days to contact you:</td>
-                        <td>
-                            <input type="checkbox" name="contactDays" value="monday">M
-                            <input type="checkbox" name="contactDays" value="tuesday">T
-                            <input type="checkbox" name="contactDays" value="wednesday">W
-                            <input type="checkbox" name="contactDays" value="thursday">Th
-                            <input type="checkbox" name="contactDays" value="friday">F
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td id="sendRequestButton"><input type="submit" id="submitButton" value="Send&nbsp;Request" /></td>
-                    </tr>
-                </table>    
-            </form>   
-        </div>
-    </body>
+        <div class="container"><div>
+            <div class="jumbotron">
+                <p>Watch for our new Hilton Head, SC location coming soon!</p>
+            </div>
+            <div>
+                <h1 id="headerh1">Tybee Sea Shanty</h1>
+            </div>
+            <hr />
+            <div>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="homepage.html">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </a>
+                    </li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr />
+            <div>
+                <form action="#" method="POST">
+                    <table class="contactform">
+                        <tr>
+                            <td class="alignright"><label id="fullNameLabel" for="fullName">Name:</label></td>
+                            <td><input id="fullName" name="fullName" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="alignright"><label id="emailLabel" for="email">Email:</label></td>
+                            <td><input id="email" name="email" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="alignright"><label id="phoneNumberLabel" for="phoneNumber">Phone:</label></td>
+                            <td><input id="phoneNumber" name="phoneNumber" type="text" /></td>
+                        </tr>           
+                        <tr>
+                            <td class="alignright">Reason for Inquiry:</td>
+                            <td>
+                                <select name="reason">
+                                    <option value="catering">Catering</option>
+                                    <option value="privateParty">Private Party</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="otherReason">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="addlInfoBox"><label id="additionalInformationLabel" for="additionalInformation">Additional Information:</label></td>
+                            <td><textarea id="additionalInformation" name="additionalInformation" rows="6"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="alignright">Have you been to the restaurant?</td>
+                            <td><input type="radio" name="existingCustomer" value="no" checked/>No
+                                <input type="radio" name="existingCustomer" value="no" />Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="alignright">Best days to contact you:</td>
+                            <td>
+                                <input type="checkbox" name="contactDays" value="monday">M
+                                <input type="checkbox" name="contactDays" value="tuesday">T
+                                <input type="checkbox" name="contactDays" value="wednesday">W
+                                <input type="checkbox" name="contactDays" value="thursday">Th
+                                <input type="checkbox" name="contactDays" value="friday">F
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="sendRequestButton"><input type="submit" id="submitButton" value="Send&nbsp;Request" /></td>
+                        </tr>
+                    </table>    
+                </form>   
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+        </body>
+    </div>
         <hr />
     <footer>
         <div>
